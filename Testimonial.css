@@ -1,0 +1,166 @@
+.testimonial {
+  position: relative;
+  padding: 70px 20px;
+  color: white;
+  text-align: center;
+}
+.overlay {
+  background: #000;
+  padding: 80px 20px;
+}
+/* Title */
+.test-title {
+  margin-top: 0;
+  font-size: 26px;
+  letter-spacing: 3px;
+  font-family: "Jost", sans-serif;
+}
+.test-subtitle {
+  font-size: 15px;
+  color: #aaa;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 65px;
+}
+/* Slider */
+.slider-section {
+  overflow: hidden;
+  max-width: 700px;
+  margin: auto;
+}
+.slider-track-section {
+  display: flex;
+  transition: transform 0.8s ease-in-out; /* smooth slide */
+}
+.slide-section {
+  min-width: 100%;
+  text-align: center;
+}
+/* Image */
+.test-img-section {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+/* Text */
+.test-text-section {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-family: "Jost", sans-serif;
+  font-style: italic;
+}
+/* Name */
+.test-name-section {
+  font-size: 17px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  font-family: "Jost", sans-serif;
+
+}
+/* Role */
+.test-role {
+  font-size: 13px;
+  color: #aaa;
+  font-family: "jost",sans-serif;
+}
+@media (max-width: 1024px) {
+
+  .overlay {
+    padding: 60px 15px;
+  }
+
+  .slider-section {
+    max-width: 600px;
+  }
+
+  .test-title {
+    font-size: 22px;
+  }
+
+  .test-subtitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .test-text-section {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+
+  .testimonial {
+    padding: 50px 10px;
+  }
+
+  .overlay {
+    padding: 50px 10px;
+  }
+
+  .slider-section {
+    max-width: 90%;
+  }
+
+  .test-img-section {
+    width: 70px;
+    height: 70px;
+  }
+
+  .test-title {
+    font-size: 20px;
+  }
+
+  .test-text-section {
+    font-size: 13px;
+  }
+
+  .test-name-section {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+
+  .testimonial {
+    padding: 40px 10px;
+  }
+
+  .overlay {
+    padding: 40px 10px;
+  }
+
+  .slider-section {
+    max-width: 100%;
+  }
+
+  .test-img-section {
+    width: 60px;
+    height: 60px;
+  }
+
+  .test-title {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .test-subtitle {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .test-text-section {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .test-name-section {
+    font-size: 14px;
+  }
+
+  .test-role {
+    font-size: 12px;
+  }
+}

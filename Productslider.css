@@ -1,0 +1,231 @@
+.slider-container {
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "jost",sans-serif;
+}
+/* Title */
+.title {
+  font-size: 26px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+.subtitle {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+.dot {
+  color: #999;
+  margin-bottom: 30px;
+}
+
+/* Wrapper */
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;   /* 🔥 ADD THIS */
+  margin: auto;
+}
+/* Buttons */
+.nav {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  width: 80px;
+}
+.prev {
+  text-align: left;
+}
+
+.next {
+  text-align: right;
+}
+/* Slider */
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+.slider-track {
+  display: flex;
+  transition: 0.5s ease;
+}
+/* Card */
+.card {
+  width: 25%;   /* IMPORTANT: 4 items ek row me */
+  flex-shrink: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.image-box {
+  position: relative;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid #e1e1e1;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+}
+/* BADGES */
+.badge {
+  position: absolute;
+  left: 0;
+  background: #e53935;
+  color: #fff;
+  font-size: 10px;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-family: "jost",sans-serif;
+}
+.badge.red {
+  top: 10px;
+}
+
+.badge.new {
+  top: 45px;
+}
+/* Hover Icons */
+.icons-product {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+.image-box:hover .icons-product {
+  left: 50px;
+}
+.icon-product {
+  background: #000;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.icon-product:hover{
+  color: white;
+  background: #e53935;
+}
+/* Text */
+.card h4 {
+  font-size: 14px;
+  margin: 10px 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.card h4:hover{
+  color:#e53935 ;
+}
+/* Price */
+.price-box {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+}
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 13px;
+}
+.new-price {
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+
+  .card {
+    width: 50%;
+  }
+
+  .nav {
+    width: 60px;
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+
+  .slider-container {
+    padding: 30px 10px;
+  }
+
+  .card {
+    width: 50%;
+    padding: 5px;
+  }
+
+  .image-box {
+    padding: 20px;
+  }
+
+  .icons-product {
+    display: none;  /* mobile me hover kaam nahi karta */
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+
+  .card {
+    width: 100%;
+  }
+
+  .slider-wrapper {
+    flex-direction: column;
+  }
+
+  .nav {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .prev, .next {
+    text-align: center;
+  }
+
+  .image-box {
+    padding: 15px;
+  }
+
+  .card h4 {
+    font-size: 13px;
+  }
+
+  .price-box {
+    font-size: 13px;
+  }
+
+  .new-price {
+    font-size: 14px;
+  }
+
+  .old-price {
+    font-size: 12px;
+  }
+}
