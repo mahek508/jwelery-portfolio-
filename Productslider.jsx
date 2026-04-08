@@ -64,8 +64,11 @@ const Productslider = () => {
                     <div className="icons-product">
                          <FaShoppingCart className="icon-product"/>
                         <FaEye className="icon-product"/>
-                       
                     </div>
+                      {/* ✅ Add to Cart Button */}
+                    <div className="add-to-cart-btn">
+                        ADD TO CART
+                     </div>
                 </div>
 
                     <h4>{item.name}</h4>
