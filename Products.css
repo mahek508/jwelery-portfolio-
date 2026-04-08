@@ -115,6 +115,7 @@
 .image-box:hover .add-to-cart-btn {
   bottom: 10px;
   opacity: 1;
+  
 }
 .add-to-cart-btn:hover{
   background: #e53935;
