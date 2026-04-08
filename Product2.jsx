@@ -64,6 +64,10 @@ const Product2 = () => {
                 <FaShoppingCart className='iconss' />
                 <FaEye className='iconss'/>
               </div>
+              {/* ✅ Add to Cart Button */}
+                        <div className="add-to-cart-btn">
+                          ADD TO CART
+                        </div>
             </div>
 
             {/* TEXT */}
