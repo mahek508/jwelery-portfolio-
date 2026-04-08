@@ -116,6 +116,31 @@
   color: white;
   background: #e53935;
 }
+/* Button hidden by default */
+.add-to-cart-btn{
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+/* Hover par show */
+.image-box:hover .add-to-cart-btn {
+  bottom: 10px;
+  opacity: 1;
+}
+.add-to-cart-btn:hover{
+  background: #e53935;
+  color: white;
+}
+
 /* Text */
 .card h4 {
   font-size: 14px;
